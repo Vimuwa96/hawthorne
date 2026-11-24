@@ -70,10 +70,9 @@
 
         <!-- BRAND -->
         <a href="index.html" class="navbar-brand brand-logo">
-
-          <img src="img/logo/Hawthorne Signatures Logo·.png" alt="Hawthorne Signatures" class="brand-image"
-            width="250px">
-
+          <img id="brandLogo" src="img/logo/Hawthorne Signatures Logo·.png"
+            data-light-logo="img/logo/Hawthorne Signatures Logo·.png" data-dark-logo="img/logo/dark.png"
+            alt="Hawthorne Signatures" class="brand-image" width="250">
         </a>
 
 
@@ -121,7 +120,7 @@
               <ul class="dropdown-menu custom-dropdown">
 
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a class="dropdown-item" href="shop.html">
                     All Collections
                   </a>
                 </li>
@@ -198,7 +197,7 @@
 
 
             <!-- SHOPPING BAG -->
-            <a href="#" class="nav-icon-btn icon-with-count" aria-label="Shopping bag">
+            <a href="cart.html" class="nav-icon-btn icon-with-count" aria-label="Shopping bag">
 
               <i class="bi bi-bag"></i>
 
@@ -489,7 +488,7 @@
         <!-- MEN -->
         <div class="col-6 col-lg-3">
 
-          <a href="#" class="hs-collection-card">
+          <a href="" class="hs-collection-card">
 
             <img src="img/categories/1.png" alt="Men's Fashion Collection">
 
@@ -582,7 +581,7 @@
         <!-- NEW ARRIVALS -->
         <div class="col-6 col-lg-3">
 
-          <a href="#" class="hs-collection-card">
+          <a href="product.html" class="hs-collection-card">
 
             <img src="img/categories/4.png" alt="New Fashion Arrivals">
 
@@ -710,7 +709,7 @@
               <span class="hs-product-category">MEN'S COLLECTION</span>
 
               <h3>
-                <a href="#">Classic Black Shirt</a>
+                <a href="product.html">Classic Black Shirt</a>
               </h3>
 
               <div class="hs-product-price" data-lkr="6500" data-usd="21.00">
@@ -1254,6 +1253,63 @@
 
 
   <!-- =====================================
+     MOBILE BOTTOM NAVIGATION
+===================================== -->
+
+  <nav class="hs-mobile-nav" aria-label="Mobile navigation">
+
+    <a href="index.html" class="hs-mobile-nav-item active" aria-label="Home">
+
+      <i class="bi bi-house"></i>
+      <span>Home</span>
+
+    </a>
+
+
+    <a href="shop.html" class="hs-mobile-nav-item" aria-label="Shop">
+
+      <i class="bi bi-grid"></i>
+      <span>Shop</span>
+
+    </a>
+
+
+    <a href="wishlist.html" class="hs-mobile-nav-item" aria-label="Wishlist">
+
+      <i class="bi bi-heart"></i>
+      <span>Wishlist</span>
+
+    </a>
+
+
+    <a href="account.html" class="hs-mobile-nav-item" aria-label="Account">
+
+      <i class="bi bi-person"></i>
+      <span>Account</span>
+
+    </a>
+
+
+    <a href="cart.html" class="hs-mobile-nav-item" aria-label="Shopping cart">
+
+      <span class="hs-mobile-cart-icon">
+
+        <i class="bi bi-bag"></i>
+
+        <span class="hs-mobile-cart-count" data-cart-count>0</span>
+
+      </span>
+
+      <span>Cart</span>
+
+    </a>
+
+  </nav>
+
+
+
+
+  <!-- =====================================
      HAWTHORNE SIGNATURES FOOTER
 ===================================== -->
 
@@ -1270,7 +1326,9 @@
           <div class="hs-footer-brand">
 
             <a href="index.html" class="hs-footer-logo">
-              <img src="assets/images/logo-horizontal.png" alt="Hawthorne Signatures">
+              <img id="footerBrandLogo" src="img/logo/Hawthorne Signatures Logo·.png"
+                data-light-logo="img/logo/Hawthorne Signatures Logo·.png" data-dark-logo="img/logo/dark.png"
+                alt="Hawthorne Signatures">
             </a>
 
             <p>
@@ -1390,16 +1448,22 @@
       <div class="hs-footer-divider"></div>
 
 
+
+
       <!-- FOOTER BOTTOM -->
       <div class="hs-footer-bottom">
 
         <div class="hs-copyright">
-
           © <span id="footerYear"></span>
           Hawthorne Signatures. All Rights Reserved.
 
+          <span class="hs-developer-credit">
+            Designed & Developed by
+            <a href="https://designwithvimukthi.epizy.com/" target="_blank" rel="noopener noreferrer">
+              Vimukthi Rupasinghe
+            </a>
+          </span>
         </div>
-
 
         <!-- PAYMENT METHODS -->
         <div class="hs-payment-methods">
@@ -1407,28 +1471,21 @@
           <span>WE ACCEPT</span>
 
           <div class="hs-payment-icons">
-
             <i class="bi bi-credit-card" title="Card payments"></i>
-
             <i class="bi bi-wallet2" title="Digital payments"></i>
-
             <span class="hs-payment-text">VISA</span>
-
             <span class="hs-payment-text">MASTER CARD</span>
-
           </div>
 
         </div>
 
-
         <!-- BACK TO TOP -->
         <button class="hs-back-to-top" type="button" id="backToTop" aria-label="Back to top">
-
           <i class="bi bi-arrow-up"></i>
-
         </button>
 
       </div>
+
 
     </div>
 
@@ -1449,6 +1506,7 @@
   <!-- CUSTOM JS -->
   <script src="assets/js/app.js"></script>
   <script src="js/index.js"></script>
+  <script src="js/cart.js"></script>
 
 </body>
 

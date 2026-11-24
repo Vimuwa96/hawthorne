@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hawthorne Signatures | Premium Fashion</title>
+
+    <meta name="description"
+        content="Discover modern essentials for everyday style at Hawthorne Signatures. Premium fashion, made in Sri Lanka.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="announcement-bar">
+        <div class="container-fluid px-lg-5">
+            <div class="announcement-content">
+
+                <span>
+                    <i class="bi bi-truck"></i>
+                    Islandwide Delivery Available
+                </span>
+
+                <span class="announcement-divider">|</span>
+
+                <span>
+                    <i class="bi bi-stars"></i>
+                    Premium Quality
+                </span>
+
+                <span class="announcement-divider">|</span>
+
+                <span>
+                    <i class="bi bi-geo-alt"></i>
+                    Made in Sri Lanka
+                </span>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MAIN NAVBAR -->
+    <header class="main-header">
+
+        <nav class="navbar navbar-expand-xl">
+
+            <div class="container-fluid px-lg-5">
+
+
+                <!-- BRAND -->
+                <a href="index.html" class="navbar-brand brand-logo">
+                    <img id="brandLogo" src="img/logo/Hawthorne Signatures Logo·.png"
+                        data-light-logo="img/logo/Hawthorne Signatures Logo·.png" data-dark-logo="img/logo/dark.png"
+                        alt="Hawthorne Signatures" class="brand-image" width="250">
+                </a>
+
+
+
+                <!-- MOBILE ACTIONS -->
+                <div class="mobile-actions d-xl-none">
+
+                    <button class="nav-icon-btn theme-toggle" type="button" aria-label="Switch theme">
+
+                        <i class="bi bi-moon-stars"></i>
+
+                    </button>
+
+                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
+                        aria-label="Toggle navigation">
+
+                        <i class="bi bi-list"></i>
+
+                    </button>
+
+                </div>
+
+
+                <!-- NAVIGATION -->
+                <div class="collapse navbar-collapse" id="mainNavbar">
+
+                    <ul class="navbar-nav mx-auto main-nav">
+
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">
+                                Home
+                            </a>
+                        </li>
+
+                        <!-- COLLECTIONS -->
+                        <li class="nav-item dropdown">
+
+                            <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+
+                                Collections
+
+                            </a>
+
+                            <ul class="dropdown-menu custom-dropdown">
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        All Collections
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Men's Collection
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Women's Collection
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Essentials
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Men</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Women</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">New Arrivals</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About</a>
+                        </li>
+
+                    </ul>
+
+
+                    <!-- NAVBAR ACTIONS -->
+                    <div class="navbar-actions">
+
+                        <!-- SEARCH -->
+                        <button class="nav-icon-btn" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#searchPanel" aria-label="Search">
+
+                            <i class="bi bi-search"></i>
+
+                        </button>
+
+
+                        <!-- ACCOUNT -->
+                        <a href="#" class="nav-icon-btn" aria-label="Account">
+
+                            <i class="bi bi-person"></i>
+
+                        </a>
+
+
+                        <!-- WISHLIST -->
+                        <a href="#" class="nav-icon-btn icon-with-count" aria-label="Wishlist">
+
+                            <i class="bi bi-heart"></i>
+
+                            <span class="icon-count">0</span>
+
+                        </a>
+
+
+                        <!-- SHOPPING BAG -->
+                        <a href="#" class="nav-icon-btn icon-with-count" aria-label="Shopping bag">
+
+                            <i class="bi bi-bag"></i>
+
+                            <span class="icon-count" data-cart-count>0</span>
+
+                        </a>
+
+
+                        <!-- CURRENCY -->
+                        <div class="dropdown currency-dropdown">
+
+                            <button class="currency-btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+
+                                <span id="currencyLabel">LKR</span>
+
+                            </button>
+
+                            <ul class="dropdown-menu dropdown-menu-end custom-dropdown">
+
+                                <li>
+                                    <button class="dropdown-item currency-option" data-currency="LKR">
+                                        LKR - Sri Lankan Rupee
+                                    </button>
+                                </li>
+
+                                <li>
+                                    <button class="dropdown-item currency-option" data-currency="USD">
+                                        USD - US Dollar
+                                    </button>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+
+                        <!-- DESKTOP THEME TOGGLE -->
+                        <button class="nav-icon-btn theme-toggle desktop-theme-toggle" type="button"
+                            aria-label="Switch theme">
+
+                            <i class="bi bi-moon-stars"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- SEARCH PANEL -->
+    <div class="collapse search-panel" id="searchPanel">
+
+        <div class="container">
+
+            <form action="#" method="GET" class="search-form">
+
+                <i class="bi bi-search"></i>
+
+                <input type="search" name="q" placeholder="Search products and collections..."
+                    aria-label="Search products" required>
+
+                <button type="submit">
+                    Search
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================
+     MOBILE BOTTOM NAVIGATION
+===================================== -->
+
+    <nav class="hs-mobile-nav" aria-label="Mobile navigation">
+
+        <a href="index.html" class="hs-mobile-nav-item active" aria-label="Home">
+
+            <i class="bi bi-house"></i>
+            <span>Home</span>
+
+        </a>
+
+
+        <a href="shop.html" class="hs-mobile-nav-item" aria-label="Shop">
+
+            <i class="bi bi-grid"></i>
+            <span>Shop</span>
+
+        </a>
+
+
+        <a href="wishlist.html" class="hs-mobile-nav-item" aria-label="Wishlist">
+
+            <i class="bi bi-heart"></i>
+            <span>Wishlist</span>
+
+        </a>
+
+
+        <a href="account.html" class="hs-mobile-nav-item" aria-label="Account">
+
+            <i class="bi bi-person"></i>
+            <span>Account</span>
+
+        </a>
+
+
+        <a href="cart.html" class="hs-mobile-nav-item" aria-label="Shopping cart">
+
+            <span class="hs-mobile-cart-icon">
+
+                <i class="bi bi-bag"></i>
+
+                <span class="hs-mobile-cart-count" data-cart-count>0</span>
+
+            </span>
+
+            <span>Cart</span>
+
+        </a>
+
+    </nav>
+
+
+
+
+    <!-- SHOP PAGE -->
+    <main class="hs-shop-page">
+
+        <!-- SHOP HEADER -->
+        <section class="hs-shop-header">
+            <div class="container">
+
+                <div class="hs-shop-breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <span>Shop</span>
+                </div>
+
+                <div class="hs-shop-title">
+                    <span class="hs-section-eyebrow">THE HAWTHORNE COLLECTION</span>
+                    <h1>Discover Your Style.</h1>
+                    <p>Timeless essentials. Refined details. Designed for everyday elegance.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CATEGORY FILTERS -->
+        <section class="hs-shop-categories">
+            <div class="container">
+
+                <div class="hs-category-tabs" id="categoryTabs">
+
+                    <button class="hs-category-tab active" data-category="all">
+                        All Products
+                    </button>
+
+                    <button class="hs-category-tab" data-category="men">
+                        Men
+                    </button>
+
+                    <button class="hs-category-tab" data-category="women">
+                        Women
+                    </button>
+
+                    <button class="hs-category-tab" data-category="new">
+                        New Arrivals
+                    </button>
+
+                    <button class="hs-category-tab" data-category="best">
+                        Best Sellers
+                    </button>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SHOP CONTENT -->
+        <section class="hs-shop-content">
+            <div class="container">
+
+                <!-- SHOP TOOLBAR -->
+                <div class="hs-shop-toolbar">
+
+                    <div class="hs-shop-results">
+                        <span id="productResults">Showing 8 products</span>
+                    </div>
+
+                    <div class="hs-shop-toolbar-actions">
+
+                        <button type="button" class="hs-mobile-filter-btn" id="openShopFilters">
+                            <i class="bi bi-sliders"></i>
+                            Filters
+                        </button>
+
+                        <div class="hs-shop-search">
+                            <i class="bi bi-search"></i>
+                            <input type="search" id="shopSearch" placeholder="Search products..."
+                                aria-label="Search products">
+                        </div>
+
+                        <div class="hs-shop-sort">
+                            <select id="shopSort" aria-label="Sort products">
+                                <option value="featured">Featured</option>
+                                <option value="newest">Newest</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="name">Name: A to Z</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- FILTER SIDEBAR -->
+                    <div class="col-lg-3">
+
+                        <aside class="hs-shop-sidebar" id="shopSidebar">
+
+                            <div class="hs-sidebar-heading">
+                                <h3>Filters</h3>
+
+                                <button type="button" id="clearFilters">
+                                    Clear All
+                                </button>
+
+                                <button type="button" class="hs-close-filters" id="closeShopFilters"
+                                    aria-label="Close filters">
+                                    <i class="bi bi-x-lg"></i>
+                                </button>
+                            </div>
+
+                            <!-- CATEGORY -->
+                            <div class="hs-filter-group">
+                                <button class="hs-filter-heading" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#filterCategory" aria-expanded="true">
+                                    Category
+                                    <i class="bi bi-chevron-down"></i>
+                                </button>
+
+                                <div class="collapse show" id="filterCategory">
+                                    <div class="hs-filter-options">
+
+                                        <label>
+                                            <input type="checkbox" name="category" value="men">
+                                            <span>Men</span>
+                                        </label>
+
+                                        <label>
+                                            <input type="checkbox" name="category" value="women">
+                                            <span>Women</span>
+                                        </label>
+
+                                        <label>
+                                            <input type="checkbox" name="category" value="accessories">
+                                            <span>Accessories</span>
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SIZE -->
+                            <div class="hs-filter-group">
+                                <button class="hs-filter-heading" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#filterSize" aria-expanded="true">
+                                    Size
+                                    <i class="bi bi-chevron-down"></i>
+                                </button>
+
+                                <div class="collapse show" id="filterSize">
+                                    <div class="hs-size-filter">
+
+                                        <label><input type="checkbox" name="size" value="S"><span>S</span></label>
+                                        <label><input type="checkbox" name="size" value="M"><span>M</span></label>
+                                        <label><input type="checkbox" name="size" value="L"><span>L</span></label>
+                                        <label><input type="checkbox" name="size" value="XL"><span>XL</span></label>
+                                        <label><input type="checkbox" name="size" value="XXL"><span>XXL</span></label>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- COLOUR -->
+                            <div class="hs-filter-group">
+                                <button class="hs-filter-heading" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#filterColor" aria-expanded="true">
+                                    Colour
+                                    <i class="bi bi-chevron-down"></i>
+                                </button>
+
+                                <div class="collapse show" id="filterColor">
+                                    <div class="hs-color-filter">
+
+                                        <label title="Black">
+                                            <input type="checkbox" name="color" value="black">
+                                            <span style="--filter-color:#171717"></span>
+                                        </label>
+
+                                        <label title="Ivory">
+                                            <input type="checkbox" name="color" value="ivory">
+                                            <span style="--filter-color:#e8e5df"></span>
+                                        </label>
+
+                                        <label title="Grey">
+                                            <input type="checkbox" name="color" value="grey">
+                                            <span style="--filter-color:#858585"></span>
+                                        </label>
+
+                                        <label title="Navy">
+                                            <input type="checkbox" name="color" value="navy">
+                                            <span style="--filter-color:#243448"></span>
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- PRICE -->
+                            <div class="hs-filter-group">
+                                <button class="hs-filter-heading" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#filterPrice" aria-expanded="true">
+                                    Price Range
+                                    <i class="bi bi-chevron-down"></i>
+                                </button>
+
+                                <div class="collapse show" id="filterPrice">
+
+                                    <div class="hs-price-filter">
+                                        <input type="range" id="priceRange" min="0" max="25000" step="500"
+                                            value="25000">
+
+                                        <div class="hs-price-values">
+                                            <span>LKR 0</span>
+                                            <strong id="priceRangeValue">LKR 25,000</strong>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <button type="button" class="hs-apply-filters" id="applyFilters">
+                                Apply Filters
+                            </button>
+
+                        </aside>
+
+                    </div>
+
+                    <!-- PRODUCT GRID -->
+                    <div class="col-lg-9">
+
+                        <div class="hs-product-grid" id="shopProductGrid">
+
+                            <!-- PRODUCT 1 -->
+                            <article class="hs-shop-product" data-name="Classic Black Shirt" data-category="men"
+                                data-price="6500" data-date="2026-11-20" data-colors="black" data-sizes="s,m,l,xl"
+                                data-tags="new best">
+
+                                <div class="hs-product-image">
+
+                                    <a href="product.html">
+                                        <img src="img/products/1.png" alt="Classic Black Shirt">
+                                    </a>
+
+                                    <span class="hs-product-badge">BEST SELLER</span>
+
+                                    <button class="hs-product-wishlist" type="button" aria-label="Add to wishlist">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+
+                                    <a href="product.html" class="hs-quick-view">
+                                        View Product
+                                    </a>
+
+                                </div>
+
+                                <div class="hs-shop-product-info">
+                                    <span class="hs-product-category">MEN'S COLLECTION</span>
+                                    <h3><a href="product.html">Classic Black Shirt</a></h3>
+
+                                    <div class="hs-shop-product-price">
+                                        <strong class="hs-shop-price" data-lkr="6500" data-usd="21.00">
+                                            LKR 6,500
+                                        </strong>
+                                    </div>
+
+                                    <div class="hs-product-colors">
+                                        <span style="--swatch:#171717"></span>
+                                        <span style="--swatch:#e8e5df"></span>
+                                        <span style="--swatch:#243448"></span>
+                                    </div>
+                                </div>
+
+                            </article>
+
+                            <!-- PRODUCT 2 -->
+                            <article class="hs-shop-product" data-name="Classic Ivory Shirt" data-category="men"
+                                data-price="8500" data-date="2026-11-19" data-colors="ivory" data-sizes="m,l,xl"
+                                data-tags="new">
+
+                                <div class="hs-product-image">
+
+                                    <a href="product.html">
+                                        <img src="img/products/2.png" alt="Classic Ivory Shirt">
+                                    </a>
+
+                                    <span class="hs-product-badge hs-badge-new">NEW ARRIVAL</span>
+
+                                    <button class="hs-product-wishlist" type="button" aria-label="Add to wishlist">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+
+                                    <a href="product.html" class="hs-quick-view">
+                                        View Product
+                                    </a>
+
+                                </div>
+
+                                <div class="hs-shop-product-info">
+                                    <span class="hs-product-category">MEN'S COLLECTION</span>
+                                    <h3><a href="product.html">Classic Ivory Shirt</a></h3>
+
+                                    <div class="hs-shop-product-price">
+                                        <strong class="hs-shop-price" data-lkr="8500" data-usd="27.50">
+                                            LKR 8,500
+                                        </strong>
+                                    </div>
+
+                                    <div class="hs-product-colors">
+                                        <span style="--swatch:#e8e5df"></span>
+                                        <span style="--swatch:#171717"></span>
+                                    </div>
+                                </div>
+
+                            </article>
+
+                            <!-- PRODUCT 3 -->
+                            <article class="hs-shop-product" data-name="Essential Navy Shirt" data-category="men"
+                                data-price="7200" data-date="2026-11-18" data-colors="navy" data-sizes="s,m,l,xl"
+                                data-tags="best trending">
+
+                                <div class="hs-product-image">
+
+                                    <a href="product.html">
+                                        <img src="img/products/3.png" alt="Essential Navy Shirt">
+                                    </a>
+
+                                    <button class="hs-product-wishlist" type="button" aria-label="Add to wishlist">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+
+                                    <a href="product.html" class="hs-quick-view">
+                                        View Product
+                                    </a>
+
+                                </div>
+
+                                <div class="hs-shop-product-info">
+                                    <span class="hs-product-category">MEN'S COLLECTION</span>
+                                    <h3><a href="product.html">Essential Navy Shirt</a></h3>
+
+                                    <div class="hs-shop-product-price">
+                                        <strong class="hs-shop-price" data-lkr="7200" data-usd="23.00">
+                                            LKR 7,200
+                                        </strong>
+                                    </div>
+                                    <div class="hs-shop-product-price">
+                                        <strong>LKR 7,200</strong>
+                                    </div>
+
+                                    <div class="hs-product-colors">
+                                        <span style="--swatch:#243448"></span>
+                                        <span style="--swatch:#171717"></span>
+                                    </div>
+                                </div>
+
+                            </article>
+
+                            <!-- PRODUCT 4 -->
+                            <article class="hs-shop-product" data-name="Modern Grey Shirt" data-category="men"
+                                data-price="5900" data-date="2026-11-17" data-colors="grey" data-sizes="m,l,xl"
+                                data-tags="trending">
+
+                                <div class="hs-product-image">
+
+                                    <a href="product.html">
+                                        <img src="img/products/4.png" alt="Modern Grey Shirt">
+                                    </a>
+
+                                    <span class="hs-product-badge hs-badge-sale">SPECIAL</span>
+
+                                    <button class="hs-product-wishlist" type="button" aria-label="Add to wishlist">
+                                        <i class="bi bi-heart"></i>
+                                    </button>
+
+                                    <a href="product.html" class="hs-quick-view">
+                                        View Product
+                                    </a>
+
+                                </div>
+
+                                <div class="hs-shop-product-info">
+                                    <span class="hs-product-category">MEN'S COLLECTION</span>
+                                    <h3><a href="product.html">Modern Grey Shirt</a></h3>
+
+                                    <div class="hs-shop-product-price">
+                                        <strong class="hs-shop-price" data-lkr="5900" data-usd="19.00">
+                                            LKR 5,900
+                                        </strong>
+                                    </div>
+
+                                    <div class="hs-product-colors">
+                                        <span style="--swatch:#858585"></span>
+                                        <span style="--swatch:#171717"></span>
+                                    </div>
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                        <!-- NO RESULTS -->
+                        <div class="hs-no-products" id="noProducts" style="display:none;">
+                            <i class="bi bi-search"></i>
+                            <h3>No products found</h3>
+                            <p>Try changing your search or filters.</p>
+                            <button type="button" id="resetShopFilters">
+                                Clear Filters
+                            </button>
+                        </div>
+
+                        <!-- PAGINATION -->
+                        <div class="hs-shop-pagination">
+                            <button type="button" class="active">1</button>
+                            <button type="button" disabled>2</button>
+                            <button type="button" disabled>3</button>
+                            <button type="button" disabled aria-label="Next page">
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- MOBILE FILTER OVERLAY -->
+    <div class="hs-filter-overlay" id="filterOverlay"></div>
+
+
+
+
+
+
+    <!-- =====================================
+     HAWTHORNE SIGNATURES FOOTER
+===================================== -->
+
+    <footer class="hs-footer">
+
+        <div class="container">
+
+            <!-- MAIN FOOTER -->
+            <div class="row g-4 hs-footer-main">
+
+                <!-- BRAND COLUMN -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="hs-footer-brand">
+
+                        <a href="index.html" class="hs-footer-logo">
+                            <img id="footerBrandLogo" src="img/logo/Hawthorne Signatures Logo·.png"
+                                data-light-logo="img/logo/Hawthorne Signatures Logo·.png"
+                                data-dark-logo="img/logo/dark.png" alt="Hawthorne Signatures">
+                        </a>
+
+                        <p>
+                            Modern essentials for everyday style.
+                            Discover timeless fashion, refined details
+                            and effortless everyday elegance.
+                        </p>
+
+                        <!-- SOCIAL MEDIA -->
+                        <div class="hs-footer-social">
+
+                            <a href="#" aria-label="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+
+                            <a href="#" aria-label="Facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+
+                            <a href="#" aria-label="TikTok">
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+
+                            <a href="#" aria-label="Pinterest">
+                                <i class="bi bi-pinterest"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EXPLORE -->
+                <div class="col-lg-2 col-md-6 col-6">
+
+                    <div class="hs-footer-column">
+
+                        <h4>Explore</h4>
+
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">Collections</a></li>
+                            <li><a href="#">New Arrivals</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CUSTOMER CARE -->
+                <div class="col-lg-3 col-md-6 col-6">
+
+                    <div class="hs-footer-column">
+
+                        <h4>Customer Care</h4>
+
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Shipping Information</a></li>
+                            <li><a href="#">Returns & Exchanges</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONTACT -->
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="hs-footer-column hs-footer-contact">
+
+                        <h4>Get in Touch</h4>
+
+                        <p>
+                            Have a question? We'd love to hear from you.
+                        </p>
+
+                        <a href="mailto:hello@hawthornesignatures.com" class="hs-contact-link">
+
+                            <i class="bi bi-envelope"></i>
+                            hello@hawthornesignatures.com
+
+                        </a>
+
+                        <a href="tel:+94000000000" class="hs-contact-link">
+
+                            <i class="bi bi-telephone"></i>
+                            +94 XX XXX XXXX
+
+                        </a>
+
+                        <div class="hs-contact-link">
+
+                            <i class="bi bi-geo-alt"></i>
+                            Sri Lanka
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FOOTER DIVIDER -->
+            <div class="hs-footer-divider"></div>
+
+
+            <!-- FOOTER BOTTOM -->
+            <div class="hs-footer-bottom">
+
+                <div class="hs-copyright">
+                    © <span id="footerYear"></span>
+                    Hawthorne Signatures. All Rights Reserved.
+
+                    <span class="hs-developer-credit">
+                        Designed & Developed by
+                        <a href="https://designwithvimukthi.epizy.com/" target="_blank" rel="noopener noreferrer">
+                            Vimukthi Rupasinghe
+                        </a>
+                    </span>
+                </div>
+
+                <!-- PAYMENT METHODS -->
+                <div class="hs-payment-methods">
+
+                    <span>WE ACCEPT</span>
+
+                    <div class="hs-payment-icons">
+                        <i class="bi bi-credit-card" title="Card payments"></i>
+                        <i class="bi bi-wallet2" title="Digital payments"></i>
+                        <span class="hs-payment-text">VISA</span>
+                        <span class="hs-payment-text">MASTER CARD</span>
+                    </div>
+
+                </div>
+
+                <!-- BACK TO TOP -->
+                <button class="hs-back-to-top" type="button" id="backToTop" aria-label="Back to top">
+                    <i class="bi bi-arrow-up"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="js/index.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/shop.js"></script>
+
+
+
+</body>
+
+</html>

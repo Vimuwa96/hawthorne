@@ -414,3 +414,75 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 });
+
+
+
+/* =========================================
+   GLOBAL CART COUNT
+========================================= */
+
+function updateCartCount() {
+
+    const cartCountElements =
+        document.querySelectorAll('[data-cart-count]');
+
+    const total = cart.reduce(
+        (sum, item) => sum + item.quantity,
+        0
+    );
+
+    cartCountElements.forEach(element => {
+        element.textContent = total;
+    });
+
+}
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    // NAVBAR AND FOOTER LOGOS
+    function updateBrandLogo() {
+
+        var currentTheme = document.documentElement.getAttribute('data-theme');
+
+        var logoAttribute = currentTheme === 'dark' ?
+            'data-dark-logo' :
+            'data-light-logo';
+
+        var brandLogo = document.getElementById('brandLogo');
+        var footerLogo = document.getElementById('footerBrandLogo');
+
+        // Update navbar logo
+        if (brandLogo) {
+            var navbarImage = brandLogo.getAttribute(logoAttribute);
+
+            if (navbarImage) {
+                brandLogo.src = navbarImage;
+            }
+        }
+
+        // Update footer logo
+        if (footerLogo) {
+            var footerImage = footerLogo.getAttribute(logoAttribute);
+
+            if (footerImage) {
+                footerLogo.src = footerImage;
+            }
+        }
+    }
+
+    // Set correct logos when page loads
+    updateBrandLogo();
+
+    // Detect light/dark theme changes
+    var themeObserver = new MutationObserver(function () {
+        updateBrandLogo();
+    });
+
+    themeObserver.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-theme']
+    });
+
+});
