@@ -5197,3 +5197,141 @@ html[data-theme="dark"] .navbar-nav .nav-link.active {
   }
 
 }
+
+/* SVG DRAWING PRELOADER */
+#hsPreloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: var(--bg);
+  transition: opacity .8s ease, visibility .8s ease;
+}
+
+#hsPreloader.hs-preloader-hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.hs-preloader-content {
+  width: 100%;
+  text-align: center;
+}
+
+.hs-svg-logo {
+  width: 190px;
+  height: 200px;
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hs-svg-logo svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.hs-svg-logo .draw-path {
+  stroke: var(--gold);
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: hsDrawLogo 2s cubic-bezier(.45, 0, .2, 1) forwards;
+  animation-delay: var(--delay, 0s);
+}
+
+@keyframes hsDrawLogo {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hs-loader-brand {
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  line-height: 1.6;
+  opacity: 0;
+  transform: translateY(7px);
+  animation: hsBrandReveal .8s ease 2.6s forwards;
+}
+
+@keyframes hsBrandReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hs-loader-line {
+  width: 100px;
+  height: 2px;
+  margin: 20px auto 0;
+  overflow: hidden;
+  background: var(--border);
+}
+
+.hs-loader-line span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: hsLineReveal .6s ease 2.8s forwards;
+}
+
+@keyframes hsLineReveal {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* Demo content shown after the preloader */
+.demo-content {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.demo-content h1 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 576px) {
+  .hs-svg-logo {
+    width: 155px;
+    height: 165px;
+  }
+
+  .hs-loader-brand {
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .hs-svg-logo .draw-path,
+  .hs-loader-brand,
+  .hs-loader-line span {
+    animation-duration: .01ms;
+    animation-delay: 0s;
+  }
+
+  #hsPreloader {
+    transition-duration: .01ms;
+  }
+}
